@@ -1,0 +1,23 @@
+<div class="container" style="background-image: url(https://bit.ly/2UwEcQ6);">
+  <h1>My Quote</h1>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quotes;let i = index'>
+        <div>
+          <h6 id={{i}} appStrikethrough>{{quote.name}} Added on {{quote.completeDate|date|uppercase}}</h6>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">Find Out</button>
+        </div>
+
+        <div *ngIf='quote.showDescription'>
+          <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <app-quote-form  (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+  </div>
+  <p *ngIf='quotes.length > 3'>You have too many quotes</p>
+</div>
