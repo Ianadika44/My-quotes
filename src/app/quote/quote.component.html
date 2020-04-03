@@ -1,5 +1,8 @@
 <div class="container" style="background-image: url(https://bit.ly/2UwEcQ6);">
   <h1>My Quote</h1>
+
+<p>How wise are you??Make out to your best mentors and add your quote;
+</p>
   <hr>
 
   <div class="row">
@@ -19,5 +22,5 @@
       <app-quote-form  (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
   </div>
-  <p *ngIf='quotes.length > 3'>You have too many quotes</p>
+  <p *ngIf='quotes.length > 4'>You have too many quotes</p>
 </div>
