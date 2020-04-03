@@ -1,5 +1,5 @@
 ## PROJECT NAME
-- Quotes
+- My quotes
 ## DESCRIPTION
 - This is an app where one can upload votes and get the best precise votes
 ## AUTHOR'S NAME
