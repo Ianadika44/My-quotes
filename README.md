@@ -14,7 +14,7 @@
 - One can delete the quote if not liked
 - One can vote for the favourite quote or dislike.
 - one can see the dates the quotes are added and the votes each quote has
-
+- One can be able to see the quotes liked or votes  of each quote
 ## CONTACT INFORMATION
 - Email:adika19ian@gmail.com.
 - Phone:0757441659.
