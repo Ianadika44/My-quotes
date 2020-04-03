@@ -1,8 +1,8 @@
 <div class="container-fluid" style="background-color: lightseagreen;">
-    <h2 class="text-center">Add a new Quote</h2>
+    <h2 class="text-center"  style="font-weight: 1000;">Add a new Quote</h2>
     <hr>
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-        <div class="form-group">
+        <div class="form-group" style="font-weight: 900;">
   
             <label for="name">Quote</label>
             <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
@@ -10,7 +10,7 @@
               <p>Quote is required</p>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="font-weight: 900;">
   
             <label for="description">Author</label>
             <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
@@ -18,7 +18,7 @@
               <p>Author is required</p>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="font-weight: 900;">
   
             <label for="complete">Date</label>
             <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
