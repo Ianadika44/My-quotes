@@ -13,7 +13,7 @@
         <div class="form-group" style="font-weight: 900;">
   
           <label for="quote">Quote</label>
-          <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+          <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.name" quote="quote" #name='ngModel' required>
           <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
             <p>Quote is required</p>
           </div>
